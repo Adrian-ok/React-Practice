@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/Adrian-ok/React-Practice/issues"
   },
-  "homepage": "https://github.com/Adrian-ok/React-Practice#readme"
+  "homepage": "https://github.com/Adrian-ok/React-Practice#readme",
+  "devDependencies": {
+    "standard": "^17.0.0"
+  },
+  "eslintConfig": {
+    "extends":"./node_modules/standard/eslintrc.json"
+  }
 }
