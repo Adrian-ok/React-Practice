@@ -3,23 +3,20 @@ import { Link } from 'react-router-dom'
 
 export function Solicitudes({ items }) {
     return (
-        <div className="p-6">
-            {items.map(item => {
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'>
+            {items.map((item) => {
                 return (
-                    <div class="max-w-md mb-3 mx-auto bg-white shadow-md rounded-md overflow-hidden">
-                        <div class="p-4">
-                            <h2 class="text-xl font-bold mb-2">{item.equipo}</h2>
-                            <p class="text-gray-700">Lorem ipsum dolor sit amet, {item.detalle}</p>
+                    <div key={item.id} className='bg-white rounded-md shadow-lg p-4 flex flex-col justify-between'>
+                        <div className='flex justify-between'>
+                            <h2 className='text-xl font-semibold'>{item.equipo}</h2>
+                            <p className='text-gray-500 text-sm mt-2'>{item.fecha}</p>
                         </div>
-                        <div class="bg-gray-100 py-3 px-4 flex items-center justify-between">
-                            <span class="text-gray-600">{item.fecha}</span>
-                            <a href="#" class="text-blue-500 hover:text-blue-700">Ver más</a>
-                            {/* <a href="#" class="text-blue-500 hover:text-blue-700">Leer más</a> */}
-                        </div>
+                        <h3 className='text-gray-500 text-sm mt-1'>{item.sector}</h3>
+                        <p className='text-gray-700 mt-2'>Contenido del párrafo {item.detalle}</p>
+                        <Link to={`/Pendientes/${item}`} className='text-blue-500 text-sm hover:text-blue-900 mt-auto text-right '>Leer más</Link>
                     </div>
-                )
+                );
             })}
         </div>
-    )
+    );
 }
-
