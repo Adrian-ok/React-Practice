@@ -1,8 +1,8 @@
 import React from 'react'
 import logo from '../../public/logo_cofra.png'
+import { FormAssing } from './FormAssing'
 
 export function CardDetails({ item }) {
-    console.log(item)
 
     const grado = () => {
         if (item[0].grado === 'Critico') {
@@ -23,7 +23,7 @@ export function CardDetails({ item }) {
 
                 <div className="border-b-2 border-green-800 flex justify-between items-center mx-6 pb-2 ">
                     <img src={logo} className="w-18 h-12" />
-                    <p className='font-bold '>{new Date(item[0].fecha).toLocaleDateString(undefined,{timeZone: 'UTC'})}</p>
+                    <p className='font-bold '>{new Date(item[0].fecha).toLocaleDateString(undefined, { timeZone: 'UTC' })}</p>
                 </div>
 
                 <div className='border-b-2 border-green-800 mx-6 mt-2 pb-2'>
@@ -42,8 +42,9 @@ export function CardDetails({ item }) {
                 <div className='mx-6 mt-2 pb-2'>
                     <p>Usuario Generador: {item[0].nombre}</p>
                 </div>
-
             </article>
+
+            <FormAssing id={item[0].id}/>
         </section>
     )
 }

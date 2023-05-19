@@ -13,7 +13,7 @@ export function Solicitudes({ items }) {
                         </div>
                         <h3 className='text-gray-500 text-sm mt-1'>{item.sector}</h3>
                         <p className='text-gray-700 mt-2'>Contenido del párrafo {item.detalle}</p>
-                        <Link to={`/Pendientes/${item.id}`} className='text-blue-500 text-sm hover:text-blue-900 mt-auto text-right '>Leer más</Link>
+                        <Link to={`/Pendientes/${item.id}`} className='text-blue-500 text-sm hover:text-blue-900 mt-auto text-right '>Ver más</Link>
                     </div>
                 );
             })}
