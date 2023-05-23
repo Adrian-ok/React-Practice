@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../public/logo_cofra.png'
+import logo from '/logo_cofra.png'
 import { FormAssing } from './FormAssing'
 
 export function CardDetails({ item }) {

@@ -15,7 +15,7 @@ export function Solicitudes({ items }) {
                         <p className='text-gray-700 mt-2'>Contenido del párrafo {item.detalle}</p>
                         {item.estado === '0' ?
                             <Link to={`/Pendientes/${item.id}`} className='text-blue-500 text-sm hover:text-blue-900 mt-auto text-right '>Ver más</Link> :
-                            <Link to={`/Detalle/${item.id}`} target="_blank" className='text-blue-500 text-sm hover:text-blue-900 mt-auto text-right '>Ver más</Link>
+                            <Link to={`/Detalle/${item.id}`} className='text-blue-500 text-sm hover:text-blue-900 mt-auto text-right '>Ver más</Link>
                         }
                     </div>
                 );

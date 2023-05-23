@@ -1,8 +1,8 @@
 import React from 'react'
 import { BtnMenu } from '../components/BtnMenu'
-import calendar from '../../public/calendario.png'
-import state from '../../public/progress.png'
-import pending from '../../public/pending.png'
+import calendar from '/calendario.png'
+import state from '/progress.png'
+import pending from '/pending.png'
 
 export function HomeMain() {
   return (
