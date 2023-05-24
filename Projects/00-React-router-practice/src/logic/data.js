@@ -11,3 +11,4 @@ export const ESTADO = [
     {value: '2', estado: 'En proceso'},
     {value: '3', estado: 'Esperando Recursos'},
 ]
+

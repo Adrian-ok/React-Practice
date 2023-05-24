@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { BtnMenu } from '../components/BtnMenu'
 import calendar from '/calendario.png'
 import state from '/progress.png'
 import pending from '/pending.png'
 
 export function HomeMain() {
+
+  useEffect(() => {
+    localStorage.removeItem('solicitudes')
+  }, [])
+  
+
   return (
     <div className="flex items-center justify-center mt-12">
       <main className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
