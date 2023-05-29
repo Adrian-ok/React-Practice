@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '/logo_cofra.png'
 import { FormAssing } from './FormAssing'
+import { BtnDownload } from './BtnDownload'
 
 export function CardDetails({ item }) {
 
@@ -42,6 +43,13 @@ export function CardDetails({ item }) {
                 <div className='mx-6 mt-2 pb-2'>
                     <p>Usuario Generador: {item[0].nombre}</p>
                 </div>
+                
+                {item[0].codimg === '0' ? <></> :
+                    <div className='flex justify-center'>
+                        <BtnDownload codimg={item[0].codimg} />
+                    </div>
+                }
+
             </article>
 
             <FormAssing id={item[0].id}/>

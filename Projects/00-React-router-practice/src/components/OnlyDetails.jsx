@@ -32,9 +32,12 @@ export function OnlyDetails({ item }) {
                     {estado(item[0].estado)}
                 </div>
 
-                <div className='flex justify-center'>
-                    <BtnDownload/>
-                </div>
+                {item[0].codimg === '0' ? <></> :
+                    <div className='flex justify-center'>
+                        <BtnDownload codimg={item[0].codimg} />
+                    </div>
+                }
+
             </article>
         </section>
     )
