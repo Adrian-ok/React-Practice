@@ -25,7 +25,7 @@ export function FindState() {
 
       {
         loading ?
-          <p>Cargando...</p> :
+          <p className='text-white text-4xl text-center'>Cargando...</p> :
           solicitudes != undefined && <Solicitudes items={solicitudes} />
       }
     </main>

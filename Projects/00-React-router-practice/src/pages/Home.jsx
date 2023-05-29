@@ -8,6 +8,7 @@ export function HomeMain() {
 
   useEffect(() => {
     localStorage.removeItem('solicitudes')
+    localStorage.removeItem('fechas')
   }, [])
   
 
