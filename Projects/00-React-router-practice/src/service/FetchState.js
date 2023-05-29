@@ -1,5 +1,5 @@
 export async function getState( option ) {
-    const URL_STATE = `http://cofra.com.ar/sistemas/api-php/controls.php?estado=${option}`
+    const URL_STATE = `https://cofra.com.ar/sistemas/api-php/controls.php?estado=${option}`
     const resultado = await fetch(URL_STATE)
     const data = await resultado.json()
 

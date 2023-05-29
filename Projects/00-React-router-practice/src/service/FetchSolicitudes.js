@@ -1,4 +1,4 @@
-const URL_PENDINGS = 'http://cofra.com.ar/sistemas/api-php/controls.php?estado=0'
+const URL_PENDINGS = 'https://cofra.com.ar/sistemas/api-php/controls.php?estado=0'
 
 export async function getSolicitudes() {
     const resultado = await fetch(URL_PENDINGS)

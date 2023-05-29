@@ -1,6 +1,6 @@
 
 export async function getDetails(id) {
-    const URL_DETAILS = `http://cofra.com.ar/sistemas/api-php/?id=${id}`
+    const URL_DETAILS = `https://cofra.com.ar/sistemas/api-php/?id=${id}`
 
     const resultado = await fetch(URL_DETAILS)
     const data = await resultado.json()

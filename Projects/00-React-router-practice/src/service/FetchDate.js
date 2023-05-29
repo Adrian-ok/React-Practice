@@ -1,5 +1,5 @@
 export async function getDateDetails( date ) {
-    const URL_DETAILS = `http://cofra.com.ar/sistemas/api-php/controls.php?filtroFecha=${date}`
+    const URL_DETAILS = `https://cofra.com.ar/sistemas/api-php/controls.php?filtroFecha=${date}`
 
     const resultado = await fetch(URL_DETAILS)
     const data = await resultado.json()

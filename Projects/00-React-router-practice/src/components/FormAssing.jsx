@@ -19,7 +19,7 @@ export function FormAssing({ id }) {
         }
         else {
             setError(false)
-            const URL_UPDATE_PENDINGS = `http://cofra.com.ar/sistemas/api-php/controls.php?nom_operario=${fields.operarioslc}&estado=${fields.sectorslc}&id=${id}`
+            const URL_UPDATE_PENDINGS = `https://cofra.com.ar/sistemas/api-php/controls.php?nom_operario=${fields.operarioslc}&estado=${fields.sectorslc}&id=${id}`
 
             console.log(URL_UPDATE_PENDINGS)
             let requestOptions = {
