@@ -8,6 +8,7 @@ import { Pendientes } from './pages/Pendings.jsx'
 import { PendingDetails } from './pages/DetailsP.jsx'
 import { FindState } from './pages/FindState.jsx'
 import { DetailS } from './pages/DetailS.jsx'
+import { FindDate } from './pages/FindDate';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/Pendientes/:id" element={<PendingDetails />} />
           <Route path="/Estado" element={<FindState />} />
           <Route path="/Detalle/:id" element={<DetailS />} />
+          <Route path="/Fecha" element={<FindDate />}/>
         </Routes>
       </Router>
     </>
