@@ -10,15 +10,17 @@ export function HomeMain() {
     localStorage.removeItem('solicitudes')
     localStorage.removeItem('fechas')
   }, [])
-  
+
 
   return (
-    <div className="flex items-center justify-center mt-12">
+    <div className="flex flex-col items-center justify-center mt-12">
+      <h1 className="text-white text-2xl font-bold mb-4">Ordenes</h1>
       <main className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         <BtnMenu title={'Pendientes'} logo={pending} link={'/pendientes'} />
         <BtnMenu title={'Por Estado'} logo={state} link={'/estado'} />
         <BtnMenu title={'Por Fecha'} logo={calendar} link={'/fecha'} />
       </main>
     </div>
+
   )
 }
