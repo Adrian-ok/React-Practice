@@ -14,5 +14,4 @@ export function changeTheme ({ children }) {
             {children}
         </theme.Provider>
     )
-
 }
