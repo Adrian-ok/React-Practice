@@ -3,7 +3,7 @@ import { useGlobalState } from '../hooks/useGlobalState'
 
 export function FormTransaction() {
 
-  const { addTransaction, deleteTransaction } = useGlobalState()
+  const { addTransaction } = useGlobalState()
 
   const handleAddPrice = (event) => {
     event.preventDefault()
