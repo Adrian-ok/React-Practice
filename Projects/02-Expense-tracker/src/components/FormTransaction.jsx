@@ -22,8 +22,8 @@ export function FormTransaction() {
   return (
     <div>
       <form onSubmit={handleAddPrice}>
-        <input type="text" name='description' placeholder='Descripcion' />
-        <input type="number" name='mount' placeholder='Monto' step={'00.01'}/>
+        <input required type="text" name='description' placeholder='Descripcion' />
+        <input required type="number" name='mount' placeholder='Monto' step={'00.01'}/>
         <button type="submit">cargar</button>
       </form>
     </div>
