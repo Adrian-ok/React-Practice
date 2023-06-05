@@ -8,7 +8,8 @@ import { Pendientes } from './pages/Pendings.jsx'
 import { PendingDetails } from './pages/DetailsP.jsx'
 import { FindState } from './pages/FindState.jsx'
 import { DetailS } from './pages/DetailS.jsx'
-import { FindDate } from './pages/FindDate';
+import { FindDate } from './pages/FindDate.jsx';
+import { NewQuery } from './pages/NewQuery.jsx'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/Estado" element={<FindState />} />
           <Route path="/Detalle/:id" element={<DetailS />} />
           <Route path="/Fecha" element={<FindDate />}/>
+          <Route path="/Nueva" element={<NewQuery />}/>
         </Routes>
       </Router>
     </>

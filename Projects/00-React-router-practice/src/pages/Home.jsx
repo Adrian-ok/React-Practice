@@ -19,6 +19,7 @@ export function HomeMain() {
         <BtnMenu title={'Pendientes'} logo={pending} link={'/pendientes'} />
         <BtnMenu title={'Por Estado'} logo={state} link={'/estado'} />
         <BtnMenu title={'Por Fecha'} logo={calendar} link={'/fecha'} />
+        <BtnMenu title={'Nueva Solicitud'} link={'/nueva'} />
       </main>
     </div>
 
