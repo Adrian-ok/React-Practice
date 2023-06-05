@@ -16,7 +16,7 @@ export function PendingDetails() {
             
             {
                 loading ? 
-                <p>Cargando...</p> : 
+                <p className='text-white text-4xl text-center'>Cargando...</p> : 
                 details != undefined && <CardDetails item={details} />
             }
             
