@@ -30,7 +30,7 @@ export function FormComponent() {
         <>
             {loading ? <p className='text-white text-4xl text-center'>Cargando...</p> :
                 <div className="max-w-md mx-auto bg-gray-300 p-6 rounded-xl mt-12">
-                    <form className="flex flex-col justify-center items-center gap-2">
+                    <form className="flex flex-col justify-center items-center gap-2" onSubmit={sendQuery}>
                         <h4 className="text-center font-bold">Nueva Solicitud</h4>
 
                         <select

@@ -33,7 +33,7 @@ export const usePostData = () => {
             .then(response => response.text())
             .then(data => {
                 // Procesar la respuesta de la API
-                window.alert('Solicitud enviada con exito')
+                window.alert('Solicitud enviada con exito', data.message);
                 setLoading(false)
             })
             .catch(error => {
