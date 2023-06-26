@@ -60,3 +60,7 @@ export function FormatDate(date) {
     return formatted_date;
 }
 
+export function Formato(texto) {
+    return texto.replace(/^(\d{4})-(\d{2})-(\d{2})$/g, '$3/$2/$1');
+}
+

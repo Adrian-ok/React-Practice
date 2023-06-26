@@ -12,7 +12,6 @@ export function HomeMain() {
     localStorage.removeItem('fechas')
   }, [])
 
-
   return (
     <div className="flex flex-col items-center justify-center mt-12">
       <h1 className="text-white text-2xl font-bold mb-4">Ordenes</h1>
@@ -21,6 +20,7 @@ export function HomeMain() {
         <BtnMenu title={'Por Estado'} logo={state} link={'/estado'} />
         <BtnMenu title={'Por Fecha'} logo={calendar} link={'/fecha'} />
         <BtnMenu title={'Nueva Solicitud'} logo={add} link={'/nueva'} />
+        <BtnMenu title={'Consultar Maquina'} link={'/maquina'} />
       </main>
     </div>
   )
