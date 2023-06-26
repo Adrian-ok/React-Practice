@@ -4,6 +4,7 @@ import calendar from '/calendario.png'
 import state from '/progress.png'
 import pending from '/pending.png'
 import add from '/expediente.png'
+import maquina from '/maquina.png'
 
 export function HomeMain() {
 
@@ -20,7 +21,7 @@ export function HomeMain() {
         <BtnMenu title={'Por Estado'} logo={state} link={'/estado'} />
         <BtnMenu title={'Por Fecha'} logo={calendar} link={'/fecha'} />
         <BtnMenu title={'Nueva Solicitud'} logo={add} link={'/nueva'} />
-        <BtnMenu title={'Consultar Maquina'} link={'/maquina'} />
+        <BtnMenu title={'Consultar Maquina'} logo={maquina} link={'/maquina'} />
       </main>
     </div>
   )
