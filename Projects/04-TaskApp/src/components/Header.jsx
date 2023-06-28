@@ -29,16 +29,16 @@ export const Header = () => {
           <div className='mt-4 flex flex-col gap-4 sm:mt-0 sm:flex-row sm:items-center'>
             <Link
               to='/addTask'
-              className='block rounded-lg bg-emerald-700 px-3 py-3 text-sm text-center font-medium text-white transition hover:bg-emerald-500 dark:bg-gray-500 dark:hover:bg-gray-400'
+              className='block rounded-lg bg-emerald-700 px-4 py-3 text-sm text-center font-medium text-white transition hover:bg-emerald-500 dark:bg-gray-500 dark:hover:bg-gray-400'
             >
               New Task
             </Link>
 
             <button
               onClick={() => changeTheme()}
-              className={theme === 'dark' ? 'bg-yellow-400 px-3 py-3 rounded-md hover:bg-yellow-500 flex items-center justify-center' : 'bg-slate-600 px-3 py-3 rounded-md hover:bg-slate-500 flex items-center justify-center'}
+              className={theme === 'dark' ? 'bg-yellow-400 px-2 py-2 rounded-md hover:bg-yellow-500 flex items-center justify-center' : 'bg-slate-600 px-2 py-2 rounded-md hover:bg-slate-500 flex items-center justify-center'}
             >
-              {theme === 'dark' ? <FaSun/> : <FaMoon/>}
+              {theme === 'dark' ? <p className='text-xl'>☀️</p> : <p className='text-xl'>🌑</p>}
             </button>
           </div>
         </div>
