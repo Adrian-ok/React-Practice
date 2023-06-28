@@ -22,5 +22,8 @@
   },
   "eslintConfig": {
     "extends": "./node_modules/standard/eslintrc.json"
+  },
+  "dependencies": {
+    "react-icons": "^4.10.1"
   }
 }
