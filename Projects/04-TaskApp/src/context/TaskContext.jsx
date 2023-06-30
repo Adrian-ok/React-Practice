@@ -3,10 +3,12 @@ import { taskReduce } from '../reduce/TaskReduce'
 
 export const TaskContext = createContext()
 
-const initialState = [
-    {id: 1, name: 'COOCKING PIZZA', detail: 'BUY: FLOUR, GRAVY AND CHEESE', complete: false},
-    {id: 2, name: 'SHOWER THE DOG', detail: 'RQUIRE: SOAP, WATER AND DOG', complete: false}
-]
+// const initialState = [
+//     {id: '179b026d-0a34-45f1-8d40-90aeccc06a63', name: 'COOCKING PIZZA', detail: 'BUY: FLOUR, GRAVY AND CHEESE', complete: false},
+//     {id: '179b026d-0a34-45f1-8d40-90aeccc06a73', name: 'SHOWER THE DOG', detail: 'RQUIRE: SOAP, WATER AND DOG', complete: false}
+// ]
+
+const initialState = []
 
 export function TaskProvider({ children }) {
 
@@ -42,12 +44,20 @@ export function TaskProvider({ children }) {
         })
     }
 
+    const updateTask = task => {
+        dispatch({
+            type: 'UPDATE_TASK',
+            payload: task
+        })
+    }
+
     return(
         <TaskContext.Provider value={{
             task: state,
             addTask,
             completeTask,
-            deleteTask
+            deleteTask,
+            updateTask
         }}>
             {children}
         </TaskContext.Provider>
